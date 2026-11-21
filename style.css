@@ -83,8 +83,8 @@ th{font-family:var(--display);background:var(--pitch);color:var(--chalk);font-we
 .ph{margin-top:2.5rem;display:grid;gap:1.5rem}
 .ph.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .ph figure{margin:0}
-.ph img{width:100%;height:auto;max-height:34rem;object-fit:cover}
-.ph.two img{aspect-ratio:3/4}
+.ph img{width:100%;height:auto}
+.ph:not(.two) figure.tall{max-width:26rem}
 figcaption{font-size:.92rem;color:var(--muted);margin-top:.5rem;max-width:40rem}
 
 .closing{padding:4rem 0;border-bottom:2px solid var(--ink)}
