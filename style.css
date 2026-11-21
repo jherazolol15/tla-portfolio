@@ -121,3 +121,4 @@ footer{background:#fff;color:var(--ink);border-top:6px solid var(--pitch)}
 .foot-in{max-width:72rem;margin:0 auto;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
 .foot-in img{width:200px;height:auto}
 .foot-in p{margin:0;max-width:34rem;color:var(--muted)}
+.clips video{width:100%;height:auto;display:block;background:var(--ink)}

@@ -12,3 +12,8 @@
   }
   window.addEventListener('scroll',update,{passive:true}); window.addEventListener('resize',update); update();
 })();
+(function(){
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    [].forEach.call(document.querySelectorAll('.clips video'),function(v){v.pause();v.removeAttribute('autoplay');v.controls=true;});
+  }
+})();
