@@ -94,7 +94,7 @@ figcaption{font-size:.92rem;color:var(--muted);margin-top:.5rem;max-width:40rem}
 .refs ul{list-style:none;margin:0;padding:0;max-width:52rem}
 .refs li{padding-left:2rem;text-indent:-2rem;margin-bottom:.8rem;font-size:.95rem;overflow-wrap:anywhere}
 footer{background:var(--pitch);color:var(--sage);padding:2rem clamp(1.25rem,5vw,4.5rem);font-size:.9rem}
-footer p{margin:0;max-width:72rem;margin-inline:auto}
+
 
 @media (max-width:820px){
   .hero{grid-template-columns:1fr}
@@ -106,3 +106,18 @@ footer p{margin:0;max-width:72rem;margin-inline:auto}
   .wk-head{grid-template-columns:1fr;gap:.5rem}
   .ph.two{grid-template-columns:1fr}
 }
+
+/* v2: seal, progress, icons, footer logo */
+.seal{width:72px;height:auto;margin:0 0 1.25rem;opacity:.95}
+.fixtures{position:sticky}
+.prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:left;transform:scaleX(0)}
+@media (prefers-reduced-motion:no-preference){.prog{transition:transform .15s linear}}
+.fixtures a{cursor:pointer}
+.fixtures a[aria-current="true"]{background:var(--pitch);color:var(--chalk)}
+.fixtures a[aria-current="true"] .t{text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--gold)}
+.r h3{display:flex;align-items:center;gap:.5rem}
+.ic{flex:none;color:var(--gold)}
+footer{background:#fff;color:var(--ink);border-top:6px solid var(--pitch)}
+.foot-in{max-width:72rem;margin:0 auto;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
+.foot-in img{width:200px;height:auto}
+.foot-in p{margin:0;max-width:34rem;color:var(--muted)}
